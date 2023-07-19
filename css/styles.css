@@ -5,6 +5,7 @@
   --ocean: #404bbf;
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 /* COMMON STYLES */
 body {
@@ -32,7 +33,7 @@ img {
 
 address {
   font-style: normal;
-  flex: content;
+  margin-left: auto;
 }
 h2 {
   color: var(--navyblue);
@@ -60,12 +61,29 @@ footer {
   padding-bottom: 100px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.portfolio-list-img-container {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .list {
@@ -121,8 +139,6 @@ footer {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
 }
 .header-nav {
   display: flex;
@@ -131,6 +147,16 @@ footer {
 .header-logo {
   display: flex;
   align-items: center;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-item {
+  width: calc((1128px-2 * 40px) / 3);
 }
 .header-list {
   display: flex;
@@ -142,6 +168,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-link {
   color: var(--navyblue);
@@ -150,7 +178,9 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.header-contact-item {
+  width: calc((1128px-1 * 40px) / 2);
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--ocean);
@@ -162,6 +192,7 @@ footer {
   line-height: 1.5;
   font-style: normal;
   letter-spacing: 0.02em;
+  padding: 24px;
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -175,7 +206,11 @@ footer {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .hero-title {
   color: var(--white);
   text-align: center;
@@ -183,6 +218,8 @@ footer {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 46px;
+  max-width: 496px;
 }
 .hero-btn {
   color: var(--white);
@@ -191,12 +228,36 @@ footer {
 .hero-dtn:hover {
   background: var(--ocean);
 }
+/* ABOUT SECTION */
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+.about-item {
+  width: calc((1128px-3 * 24px) / 4);
+}
+
+/* DESCRIPTION SECTION */
+.description-list {
+  display: flex;
+  justify-content: space-between;
+}
+.description-item {
+  width: calc((1128px-2 * 24px) / 3);
+}
+.description-menu {
+  margin-bottom: 72px;
+}
 
 /* AVATAR SECTION */
 .avatar {
   background-color: var(--cloud);
   padding-top: 232px;
   padding-bottom: 120px;
+}
+.avatar-list {
+  display: flex;
+  justify-content: space-between;
 }
 .avatar-title {
   color: var(--navyblue);
@@ -205,16 +266,20 @@ footer {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 .avatar-item {
   background-color: var(--white);
+  width: calc((1128px-3 * 24px) / 4);
 }
 
 .avatar-avatar {
   text-align: center;
+  padding-top: 32px;
 }
 .avatar-descriptions {
   text-align: center;
+  padding-bottom: 32px;
 }
 /* SECTION PORTFPLIO */
 
@@ -232,6 +297,23 @@ footer {
 .portfolio-btn:focus {
   color: var(--white);
 }
+.portfolio-list-img {
+  flex-wrap: wrap;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72;
+}
+.portfolio-item {
+  width: calc((1128px-4 * 24px) / 5);
+}
+.flex-element {
+  width: calc((1128px-2 * 24px) / 3);
+}
+
 .portfolio-menu {
   font-weight: 500;
   font-size: 20px;
@@ -244,10 +326,16 @@ footer {
 }
 
 /* FOOTER SEKTION */
+.footer-logo {
+  padding-top: 100px;
+}
 .footer-descriptions {
   font-size: 16px;
   line-height: 1.5;
   color: var(--cloud);
+  width: 264px;
+  margin-top: 18px;
+  padding-bottom: 100px;
 }
 .studio-white {
   color: var(--cloud);
