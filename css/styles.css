@@ -130,7 +130,7 @@ footer {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
 }
 .header-container {
   display: flex;
@@ -313,7 +313,7 @@ footer {
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 12px 24px;
-  border: 1px var(--cornflower);
+  border: 1px solid var(--cornflower);
   border-radius: 4px;
 }
 
@@ -346,11 +346,9 @@ footer {
   gap: 24px;
   margin-bottom: 72px;
 }
-.portfolio-item {
-  width: calc((1128px-4 * 24px) / 5);
-}
 .flex-item {
-  width: calc((1128px-2 * 24px) / 3);
+  row-gap: 48px;
+  width: calc((1128px-4 * 24px) / 5);
 }
 .portfolio-wraper-container {
   padding: 32px 16px;
