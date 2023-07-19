@@ -233,14 +233,11 @@ footer {
 }
 .about-list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
-}
-.about-item {
-  width: calc((1128px-3 * 24px) / 4);
 }
 .about-menu {
   margin-bottom: 8px;
+  width: calc((1128px-3 * 24px) / 4);
 }
 
 /* DESCRIPTION SECTION */
@@ -335,9 +332,7 @@ footer {
 }
 .portfolio-list-img {
   flex-wrap: wrap;
-  flex-wrap: wrap;
   column-gap: 24px;
-  margin-right: 24px;
   row-gap: 48px;
 }
 .portfolio-list {
@@ -347,8 +342,7 @@ footer {
   margin-bottom: 72px;
 }
 .flex-item {
-  row-gap: 48px;
-  width: calc((1128px-4 * 24px) / 5);
+  width: calc((1128px-2 * 24px) / 3);
 }
 .portfolio-wraper-container {
   padding: 32px 16px;
