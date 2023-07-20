@@ -175,7 +175,7 @@ footer {
   letter-spacing: 0.02em;
 }
 .header-contact-item {
-  width: calc((1128px-1 * 40px) / 2);
+  width: calc((100% - 40px) / 2);
 }
 .header-link:hover,
 .header-link:focus {
@@ -238,7 +238,7 @@ footer {
   margin-bottom: 8px;
 }
 .about-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 /* DESCRIPTION SECTION */
@@ -338,7 +338,7 @@ footer {
   margin-bottom: 72px;
 }
 .flex-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-text-container {
   padding: 32px 16px;
