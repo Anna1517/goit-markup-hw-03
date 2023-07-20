@@ -330,19 +330,14 @@ footer {
   color: var(--white);
   border: 1px solid transparent;
 }
-.portfolio-list-img {
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-.portfolio-list {
+.portfolio-list-btn {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
 }
 .flex-item {
-  width: calc((1128px-2 * 24px) / 3);
+  width: calc((1128-2 * 24) / 3);
 }
 .portfolio-wraper-container {
   padding: 32px 16px;
