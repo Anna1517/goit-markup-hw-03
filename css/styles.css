@@ -198,7 +198,6 @@ footer {
 /* HERO SECTION */
 .hero {
   margin: 0 auto;
-  margin-bottom: 120px;
   padding: 188px 0;
 }
 .hero-container {
@@ -237,7 +236,9 @@ footer {
 }
 .about-menu {
   margin-bottom: 8px;
-  width: calc((1128px-3 * 24px) / 4);
+}
+.about-item {
+  width: calc((100%-72px) / 4);
 }
 
 /* DESCRIPTION SECTION */
@@ -337,12 +338,7 @@ footer {
   margin-bottom: 72px;
 }
 .flex-item {
-  width: calc((1128-2 * 24) / 3);
-}
-.portfolio-wraper-container {
-  padding: 32px 16px;
-  border: 1px solid var(--cornflower);
-  border-top: none;
+  width: calc((100%-48px) / 3);
 }
 .portfolio-text-container {
   padding: 32px 16px;
