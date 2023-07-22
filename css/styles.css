@@ -128,8 +128,6 @@ footer {
 /* LOGO FINISH */
 /* HEDER BLOK */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--cornflower);
 }
 .header-container {
@@ -184,11 +182,11 @@ footer {
 .header-contact-link {
   color: var(--slate);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1.5;
   font-style: normal;
   letter-spacing: 0.02em;
-  padding: 24px;
+  padding: 24px 0;
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -244,6 +242,7 @@ footer {
 /* DESCRIPTION SECTION */
 .description {
   padding-bottom: 120px;
+  padding-top: 0;
 }
 .description-list {
   display: flex;
@@ -287,13 +286,10 @@ footer {
 
 .avatar-avatar {
   text-align: center;
-  padding-top: 32px;
-  text-align: center;
   margin-bottom: 8px;
 }
 .avatar-descriptions {
   text-align: center;
-  padding-bottom: 32px;
   text-align: center;
 }
 /* SECTION PORTFPLIO */
@@ -354,7 +350,6 @@ footer {
 
 /* FOOTER SEKTION */
 .footer-logo {
-  padding-top: 100px;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -364,7 +359,6 @@ footer {
   color: var(--cloud);
   width: 264px;
   margin-top: 18px;
-  padding-bottom: 100px;
 }
 .studio-white {
   color: var(--cloud);
